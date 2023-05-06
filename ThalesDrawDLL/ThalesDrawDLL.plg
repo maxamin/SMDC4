@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ThalesDrawDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x429 /fo"Debug/ThalesDrawDLL.res" /d "_DEBUG" /d "_AFXDLL" "D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ThalesDrawDLL.rc"" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE37.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/ThalesDrawDLL.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ChildFrm.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ColorListCtrl.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\FileDLG_ChangedType.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\FrqTimeList.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\MyMultiDocTemplate.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\TBEpolar.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ThalesDrawDLL.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ThalesDrawDoc.cpp"
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\ThalesDrawView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE37.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE38.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/ThalesDrawDLL.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Behzad_950905\970916__BACKUP\F\map1\THALES_Program\ThalesDrawDLL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE38.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE39.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/ThalesDrawDLL.pdb" /debug /machine:I386 /def:".\ThalesDrawDLL.def" /out:"Debug/ThalesDrawDLL.dll" /implib:"Debug/ThalesDrawDLL.lib" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\ColorListCtrl.obj
+.\Debug\FileDLG_ChangedType.obj
+.\Debug\FrqTimeList.obj
+.\Debug\MyMultiDocTemplate.obj
+.\Debug\StdAfx.obj
+.\Debug\TBEpolar.obj
+.\Debug\ThalesDrawDLL.obj
+.\Debug\ThalesDrawDoc.obj
+.\Debug\ThalesDrawView.obj
+.\Debug\ThalesDrawDLL.res
+]
+Creating command line "link.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSPE39.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+ColorListCtrl.cpp
+FileDLG_ChangedType.cpp
+FrqTimeList.cpp
+MyMultiDocTemplate.cpp
+TBEpolar.cpp
+ThalesDrawDLL.cpp
+ThalesDrawDoc.cpp
+ThalesDrawView.cpp
+Generating Code...
+Linking...
+   Creating library Debug/ThalesDrawDLL.lib and object Debug/ThalesDrawDLL.exp
+
+
+
+<h3>Results</h3>
+ThalesDrawDLL.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

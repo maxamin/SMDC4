@@ -1,0 +1,8 @@
+; ThalesDrawDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ThalesDrawDLL"
+DESCRIPTION  'ThalesDrawDLL Windows Dynamic Link Library'
+
+EXPORTS
+		DLLthalesDocTemplate
+    ; Explicit exports can go here

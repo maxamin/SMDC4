@@ -1,0 +1,9 @@
+; Administrative.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Administrative"
+DESCRIPTION  'Administrative Windows Dynamic Link Library'
+
+EXPORTS
+	DLLNewDocTemplate
+	;_Audit@4
+    ; Explicit exports can go here

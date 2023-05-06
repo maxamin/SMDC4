@@ -1,0 +1,11 @@
+; IFIC.def : Declares the module parameters for the DLL.
+
+LIBRARY      "IFIC"
+DESCRIPTION  'IFIC Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	_IFICImport@12
+	_SRSImport@12
+	_AccessLevels@12
+	_Agreements@16

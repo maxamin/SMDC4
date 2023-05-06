@@ -1,0 +1,8 @@
+; ArgusWFdll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "OthersWFdll"
+DESCRIPTION  'OthersWFdll Windows Dynamic Link Library'
+
+EXPORTS
+	DLLothersDocTemplate
+    ; Explicit exports can go here

@@ -1,0 +1,575 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "OthersWFdll DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "OthersWFdll\0"
+            VALUE "LegalCopyright", "Copyright (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "OthersWFdll.DLL\0"
+            VALUE "ProductName", "OthersWFdll Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_ARGUSTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Export Data As...",           ID_TOOLS_Data
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Tools"
+    BEGIN
+        POPUP "ColorMap"
+        BEGIN
+            MENUITEM "Topo_0",                      ID_TOOLS_COLORMAP_TOPO0
+            MENUITEM "Topo_1",                      ID_TOOLS_COLORMAP_TOPO1
+            MENUITEM "Jet",                         ID_TOOLS_COLORMAP_JET
+            MENUITEM "Gray",                        ID_TOOLS_COLORMAP_GRAY
+            MENUITEM "Pink",                        ID_TOOLS_COLORMAP_PINK
+            MENUITEM "Copper",                      ID_TOOLS_COLORMAP_COPPER
+            MENUITEM "Globe",                       ID_TOOLS_COLORMAP_GLOBE
+        END
+        MENUITEM "Background Color",            ID_TOOLS_BACKGROUNDCOLOR
+        MENUITEM "Axis Color",                  ID_TOOLS_AXISCOLOR
+        MENUITEM "Text Color",                  ID_TOOLS_TEXTCOLOR
+        MENUITEM "Grid\tCtrl+G",                ID_TOOLS_Grid
+        MENUITEM "Increase Line Width\tCtrl+A", ID_BUTTON_LinewidthP
+        MENUITEM "Decrease Line Width\tCtrl+M", ID_BUTTON_LinewidthN
+        MENUITEM SEPARATOR
+        POPUP "Mode"
+        BEGIN
+            MENUITEM "Line",                        ID_TOOLS_MODE_LINE
+            MENUITEM "Bar Chart",                   ID_TOOLS_MODE_BARCHART
+        END
+        MENUITEM SEPARATOR
+        POPUP "Value"
+        BEGIN
+            POPUP "Level"
+            BEGIN
+                MENUITEM "Value",                       ID_TOOLS_VALUE_LEVEL
+                MENUITEM "Mean Value",                  ID_TOOLS_VALUE_MEANLEVEL
+
+                MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_STANDARDDEVIATIONLEVEL
+
+                MENUITEM "Maximum Value",               ID_TOOLS_VALUE_MAXLEVEL
+
+                MENUITEM "Minimum Value",               ID_TOOLS_VALUE_MINLEVEL
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "Frequency Offset"
+            BEGIN
+                MENUITEM "Value",                       ID_TOOLS_VALUE_FREQUENCYOFFSET
+
+                MENUITEM "Mean Value",                  ID_TOOLS_VALUE_FREQUENCYOFFSET_MEANVALUE
+
+                MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_FREQUENCYOFFSET_STANDARDDEVIATION
+
+                MENUITEM "Max Value",                   ID_TOOLS_VALUE_FREQUENCYOFFSET_MAXVALUE
+
+                MENUITEM "Min Value",                   ID_TOOLS_VALUE_FREQUENCYOFFSET_MINVALUE
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "Modulation"
+            BEGIN
+                MENUITEM "Value",                       ID_TOOLS_VALUE_MODULATION_VALUE
+
+                MENUITEM "Mean Value",                  ID_TOOLS_VALUE_MODULATION_MEANVALUE
+
+                MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_MODULATION_STANDARDDEVIATION
+
+                MENUITEM "Maximum Value",               ID_TOOLS_VALUE_MODULATION_MAXIMUMVALUE
+
+                MENUITEM "Minimum Value",               ID_TOOLS_VALUE_MODULATION_MINIMUMVALUE
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "Band Width"
+            BEGIN
+                MENUITEM "Value",                       ID_TOOLS_VALUE_BANDWIDTH
+
+                MENUITEM "Mean Value",                  ID_TOOLS_VALUE_MEANBANDWIDTH
+
+                MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_STANDARDDEVIATIONBANDWIDTH
+
+                MENUITEM "Maximum Value",               ID_TOOLS_VALUE_MAXBANDWIDTH
+
+                MENUITEM "Minimum Value",               ID_TOOLS_VALUE_MINBANDWIDTH
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "Bearing"
+            BEGIN
+                POPUP "Quality"
+                BEGIN
+                    MENUITEM "Value",                       ID_TOOLS_VALUE_QUALITY
+
+                    MENUITEM "Mean Value",                  ID_TOOLS_VALUE_QUALITY_MEANVALUE
+
+                    MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_QUALITY_STANDARDDEVIATION
+
+                    MENUITEM "Max Value",                   ID_TOOLS_VALUE_QUALITY_MAXVALUE
+
+                    MENUITEM "Min Value",                   ID_TOOLS_VALUE_QUALITY_MINVALUE
+
+                END
+                POPUP "Direction"
+                BEGIN
+                    MENUITEM "Value",                       ID_TOOLS_VALUE_DIR
+
+                    MENUITEM "Mean Value",                  ID_TOOLS_VALUE_DIRECTION_MEANVALUE
+
+                    MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_DIRECTION_STANDARDDEVIATION
+
+                    MENUITEM "Max Value",                   ID_TOOLS_VALUE_DIRECTION_MAXVALUE
+
+                    MENUITEM "Min Value",                   ID_TOOLS_VALUE_DIRECTION_MINVALUE
+
+                END
+            END
+            MENUITEM SEPARATOR
+            POPUP "Sub AudioTone"
+            BEGIN
+                MENUITEM "Value",                       ID_TOOLS_VALUE_SUBAUDIOTONE_VALUE
+
+                MENUITEM "Mean Value",                  ID_TOOLS_VALUE_SUBAUDIOTONE_MEANVALUE
+
+                MENUITEM "Standard Deviation",          ID_TOOLS_VALUE_SUBAUDIOTONE_STANDARDDEVIATION
+
+                MENUITEM "Maximum Value",               ID_TOOLS_VALUE_SUBAUDIOTONE_MAXIMUMVALUE
+
+                MENUITEM "Minimum Value",               ID_TOOLS_VALUE_SUBAUDIOTONE_MINIMUMVALUE
+
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Program",                     ID_TOOLS_VALUE_PROGRAM
+            MENUITEM SEPARATOR
+            MENUITEM "PI Code",                     ID_TOOLS_VALUE_PICODE
+            MENUITEM SEPARATOR
+            MENUITEM "Sound ID",                    ID_TOOLS_VALUE_SOUNDID
+            MENUITEM SEPARATOR
+            MENUITEM "Occupancy",                   ID_TOOLS_VALUE_OCCUPANCY
+            MENUITEM SEPARATOR
+            MENUITEM "Number",                      ID_TOOLS_VALUE_NUMBER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "3D ( Frequency ,Time , Value )", ID_TOOLS_3D
+        MENUITEM SEPARATOR
+        MENUITEM "2D ( Frequency , Value )",    ID_TOOLS_2DFREQVALUE
+        MENUITEM "Select Time",                 ID_BUTTON_TimeSelect
+        MENUITEM SEPARATOR
+        MENUITEM "2D ( Time , Value )",         ID_TOOLS_2DTIMEVALUE
+        MENUITEM "Select Frequency",            ID_BUTTON_FrqSelect
+        MENUITEM SEPARATOR
+        MENUITEM "2D ( Water Fall )",           ID_TOOLS_2Dwf
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "Legend\tCtrl+L",              ID_BUTTON_ShowLegend
+        MENUITEM "Measurement Setting Information\tCtrl+I", 
+                                                ID_BUTTON_Setting
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_ARGUSTYPE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_TOOLS_MODE_BARCHART
+    BUTTON      ID_TOOLS_MODE_LINE
+    SEPARATOR
+    BUTTON      ID_TOOLS_3D
+    SEPARATOR
+    BUTTON      ID_TOOLS_2DFREQVALUE
+    BUTTON      ID_BUTTON_TimeSelect
+    SEPARATOR
+    BUTTON      ID_TOOLS_2DTIMEVALUE
+    BUTTON      ID_BUTTON_FrqSelect
+    SEPARATOR
+    BUTTON      ID_TOOLS_2Dwf
+    SEPARATOR
+    BUTTON      ID_TOOLS_Grid
+    SEPARATOR
+    BUTTON      ID_TOOLS_Data
+    SEPARATOR
+    BUTTON      ID_BUTTON_polar
+    SEPARATOR
+    BUTTON      ID_BUTTON_ShowLegend
+    SEPARATOR
+    BUTTON      ID_BUTTON_Setting
+    SEPARATOR
+    BUTTON      ID_BUTTON_LinewidthP
+    BUTTON      ID_BUTTON_LinewidthN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_ARGUSTYPE           BITMAP  DISCARDABLE     "argustyp.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 271, 298
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,111,0,7,6,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,79,0,7,6,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,4,261,243,
+                    WS_EX_STATICEDGE
+    LTEXT           "Direction(deg.)",IDC_STATICB1,7,7,72,9
+    CTEXT           "",IDC_STATIC_D,7,17,47,10,0,WS_EX_STATICEDGE
+    LTEXT           "Quality(%)",IDC_STATICB2,6,224,52,9
+    CTEXT           "",IDC_STATIC_Q,6,235,31,10,0,WS_EX_STATICEDGE
+    RTEXT           "Level",IDC_STATIC_L0,180,224,81,9
+    CTEXT           "",IDC_STATIC_L,212,235,49,10,0,WS_EX_STATICEDGE
+    CONTROL         "Level",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,223,8,37,
+                    8
+    CONTROL         "Quality",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,223,19,
+                    37,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,220,5,44,25
+    CTEXT           "Static",IDC_STATIC_R,101,285,113,9,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,12,248,248,19
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,12,268,248,28
+    RTEXT           "Recording Date/Time :",IDC_STATIC_Time,16,271,82,8
+    CONTROL         "Total",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    216,271,29,9
+    COMBOBOX        IDC_COMBO_Fr,123,251,98,81,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Time,101,270,113,73,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Frequency(MHz) :",IDC_STATICB3,24,253,96,8
+END
+
+IDD_DIALOG_FrqTime DIALOGEX 0, 0, 151, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,202,6,6,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,0,0,150,199,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_FrqTime, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ARGUSTYPE ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_BUTTON_LinewidthP,   VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_TOOLS_Grid,          VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_BUTTON_Setting,      VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_BUTTON_ShowLegend,   VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_BUTTON_LinewidthN,   VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON_Setting       "Measurement Setting Information\nMeasurement Setting Information"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_SAVE            "Save the active document\nSave"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x29, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FAR)
+#ifdef _WIN32
+LANGUAGE 0x29, 0x1
+#pragma code_page(1256)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ArgusWFdll.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ARGUSTYPE           ICON    DISCARDABLE     "idr_argu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_ARGUSTYPE           "\nMonitoring OTHERS\nMonitoring OTHERS\n\n\nSMS4DC.Document\nSMS4DC Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_3D             "3D ( Frequency ,Time , Value )\n3D ( Frequency ,Time , Value )"
+    ID_TOOLS_2DFREQVALUE    "2D ( Frequency , Value )\n2D ( Frequency , Value )"
+    ID_TOOLS_2Dwf           "2D ( Water Fall )\n2D ( Water Fall )"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_2DTIMEVALUE    "2D ( Time , Value )\n2D ( Time , Value )"
+    ID_TOOLS_Grid           "Grid\nGrid"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_VALUE_OCCUPANCY "Occupancy\nOccupancy"
+    ID_TOOLS_VALUE_FREQUENCYOFFSET "Frequency Offset\nFrequency Offset"
+    ID_TOOLS_VALUE_DIR      "Direction\nDirection"
+    ID_TOOLS_VALUE_QUALITY  "Quality\nQuality"
+    ID_TOOLS_VALUE_NUMBER   "Number\nNumber"
+    ID_TOOLS_VALUE_LEVEL    "Level\nLevel"
+    ID_TOOLS_VALUE_MEANLEVEL "Mean Level\nMean Level"
+    ID_TOOLS_VALUE_STANDARDDEVIATIONLEVEL 
+                            "Standard Deviation Level\nStandard Deviation Level"
+    ID_TOOLS_VALUE_MAXLEVEL "Max Level\nMax Level"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_MODE_LINE      "Line\nLine"
+    ID_TOOLS_MODE_BARCHART  "Bar Chart\nBar Chart"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_VALUE_MINLEVEL "Min Level\nMin Level"
+    ID_TOOLS_VALUE_MEANBANDWIDTH "Mean Band Width\nMean Band Width"
+    ID_TOOLS_VALUE_STANDARDDEVIATIONBANDWIDTH 
+                            "Standard Deviation Band Width\nStandard Deviation Band Width"
+    ID_TOOLS_VALUE_MAXBANDWIDTH "Max Band Width\nMax Band Width"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_VALUE_BANDWIDTH "Band Width\nBand Width"
+    ID_TOOLS_VALUE_MINBANDWIDTH "Min Band Width\nMin Band Width"
+    ID_TOOLS_Data           "Export Data As...\nExport Data As..."
+    ID_TOOLS_VALUE_PICODE   "PI Code\nPI Code"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "ID_FILE_OPEN\nID_FILE_OPEN"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_VALUE_PROGRAM  "Program\nProgram"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON_ShowLegend    "Show Legend\nShow Legend"
+END
+
+#endif    // Unknown language: 0x29, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ArgusWFdll.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

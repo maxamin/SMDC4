@@ -1,0 +1,663 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IFIC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,1,0,0
+ PRODUCTVERSION 4,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "ITU\0"
+            VALUE "FileDescription", "IFIC DLL\0"
+            VALUE "FileVersion", "4, 1, 0, 0\0"
+            VALUE "InternalName", "IFIC\0"
+            VALUE "LegalCopyright", "Copyright (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IFIC.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "IFIC Dynamic Link Library\0"
+            VALUE "ProductVersion", "4, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QueryDLG DIALOG DISCARDABLE  0, 0, 394, 297
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IFIC import"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Import",IDOK,330,17,50,14
+    PUSHBUTTON      "Close",IDCANCEL,330,53,50,14
+    GROUPBOX        "Service",IDC_STATIC1,7,6,103,68
+    GROUPBOX        "Country",IDC_STATIC2,113,6,209,69
+    GROUPBOX        "Frequency conditions",IDC_STATIC3,7,77,380,88
+    CONTROL         "FM/TV",IDC_FMTV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,19,39,10
+    CONTROL         "LF / MF",IDC_LFMF,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,54,54,41,10
+    CONTROL         "FXM",IDC_FXM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,
+                    54,31,10
+    LISTBOX         IDC_ADMLIST,118,17,50,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ADMSEL,268,17,50,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add -->",IDC_AdmAdd,170,21,48,14
+    PUSHBUTTON      "Add all",IDC_AdmAddAll,170,42,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "<-- Remove",IDC_AdmRemove,221,21,45,14
+    PUSHBUTTON      "Clear",IDC_AdmClear,221,42,45,14
+    LISTBOX         IDC_FreqCond,13,88,91,70,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,110,274,277,13
+    RTEXT           "Import progress:",IDC_STATIC9,7,277,100,10
+    COMBOBOX        IDC_STATION_CLASS,58,177,141,71,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FRAGMENT,257,177,60,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ClassSel,58,194,140,75,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add -->",IDC_ClassAdd,10,194,47,14
+    PUSHBUTTON      "<-- Remove",IDC_ClassRemove,10,237,47,14
+    PUSHBUTTON      "Clear",IDC_ClassClear,10,254,47,14
+    PUSHBUTTON      "Add -->",IDC_FragAdd,206,194,49,14
+    PUSHBUTTON      "<-- Remove",IDC_FragRemove,206,237,50,14
+    PUSHBUTTON      "Clear",IDC_FragClear,206,254,50,14
+    LISTBOX         IDC_FragSel,257,194,59,75,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Class of station",IDC_STATIC7,7,167,194,106
+    GROUPBOX        "Fragment",IDC_STATIC5,203,167,117,106
+    LISTBOX         IDC_FreqCondSel,210,88,168,70,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "F = Assigned frequency",IDC_STATIC4,115,88,90,12
+    LTEXT           "F1 =",IDC_STATIC,112,104,15,8
+    LTEXT           "F2 =",IDC_STATIC,112,119,15,8
+    PUSHBUTTON      "Add -->",IDC_FreqAdd,111,139,46,14
+    PUSHBUTTON      "<-- Remove",IDC_FreqRem,159,139,48,14
+    EDITTEXT        IDC_F1,129,103,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F2,129,116,45,13,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_F1U,175,103,33,37,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_F2U,175,116,33,37,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Assign ID",IDC_STATIC6,321,167,62,106
+    EDITTEXT        IDC_ID,329,256,45,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "^",IDC_IDAdd,327,240,21,14
+    PUSHBUTTON      "v",IDC_IDRemove,354,240,21,14
+    LISTBOX         IDC_IDSel,323,177,57,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "Allotments",IDC_DIGITAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,26,36,66,10
+    GROUPBOX        "BR IFIC Database",IDC_STATIC,7,105,380,38,NOT 
+                    WS_VISIBLE | WS_GROUP
+    CONTROL         "Microsoft Access",IDC_MDB,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,16,116,70,10
+    CONTROL         "SQLite",IDC_SQLITE,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,16,129,37,10
+    EDITTEXT        IDC_DB3_FILE,91,127,245,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_BROWSE,340,127,41,12,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+END
+
+IDD_SelectRecord DIALOGEX 0, 0, 397, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Select a station"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,331,194,50,14
+    CONTROL         "",IDC_ADODC1,"{67397AA3-7FB1-11D0-B148-00A0C922E820}",
+                    NOT WS_VISIBLE,19,194,65,14
+    CONTROL         "",IDC_DATAGRID2,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,7,383,184
+END
+
+IDD_ACCESSLEVEL DIALOG DISCARDABLE  0, 0, 277, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Access levels"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Delete",ID_DELETE,51,128,50,14
+    GROUPBOX        "New",IDC_STATIC2,7,7,263,42
+    RTEXT           "User Name:",IDC_STATIC1,25,18,107,9
+    RTEXT           "User Password:",IDC_STATIC3,13,33,119,9
+    EDITTEXT        IDC_USERADD,136,16,127,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSADD,136,30,127,13,ES_AUTOHSCROLL
+    GROUPBOX        "Modify",IDC_STATIC4,6,49,263,42
+    RTEXT           "User Name:",IDC_STATIC5,24,60,108,9
+    RTEXT           "User Password:",IDC_STATIC6,13,76,119,9
+    EDITTEXT        IDC_PASSMOD,136,73,126,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_USERMOD,136,59,126,72,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ACCESSLEVEL,112,92,152,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Access Level:",IDC_STATIC7,15,94,93,9
+    PUSHBUTTON      "Save",ID_SAVE,110,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,128,50,14
+    CONTROL         "",IDC_NEW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,18,
+                    16,8
+    CONTROL         "",IDC_MODIFY,"Button",BS_AUTORADIOBUTTON,13,60,16,8
+    CONTROL         "Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,110,42,10
+END
+
+IDD_AGREEMENTS DIALOGEX 0, 0, 381, 282
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Agreements"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RTEXT           "Name:",IDC_STATIC1,14,20,45,8
+    RTEXT           "Service:",IDC_STATIC2,156,19,54,8
+    RTEXT           "Countries:",IDC_STATIC3,13,35,46,8
+    RTEXT           "Model:",IDC_STATIC4,13,50,50,8
+    RTEXT           "Type:",IDC_TYPE_lbl,101,50,37,8
+    RTEXT           "Propagation models:",IDC_STATIC6,13,65,116,8
+    EDITTEXT        IDC_AGNAME,61,18,91,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_AGSERV,212,18,77,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_AGCOUNTRIES,61,33,228,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_AGPROP,133,63,156,13,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,7,7,306,81
+    CONTROL         "New",IDC_AGNEW,"Button",BS_OWNERDRAW | WS_TABSTOP,237,
+                    93,21,16
+    PUSHBUTTON      "Modify",IDC_AGMOD,318,23,47,12
+    CONTROL         "Save",IDC_AGSAVE,"Button",BS_OWNERDRAW | WS_DISABLED | 
+                    WS_TABSTOP,281,93,21,16
+    CONTROL         "Previous",IDC_AGPREV,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,48,93,21,16
+    CONTROL         "Next",IDC_AGNEXT,"Button",BS_OWNERDRAW | WS_TABSTOP,196,
+                    93,21,16
+    PUSHBUTTON      "Cancel",IDC_AGCANCEL,318,48,47,12,WS_DISABLED
+    CONTROL         "Delete",IDC_AGDELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    259,93,21,16
+    CONTROL         "First",IDC_AGFIRST,"Button",BS_OWNERDRAW | WS_DISABLED | 
+                    WS_TABSTOP,26,93,21,16
+    CONTROL         "Last",IDC_AGLAST,"Button",BS_OWNERDRAW | WS_TABSTOP,216,
+                    93,21,16
+    EDITTEXT        IDC_RECORDCOUNT,66,93,127,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_AGMODEL,64,48,32,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_TABSTOP
+    COMBOBOX        IDC_AGTYPE,142,48,34,50,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_SERVLIST,289,18,15,13,WS_DISABLED
+    PUSHBUTTON      "...",IDC_COUNTLIST,289,33,15,13,WS_DISABLED
+    PUSHBUTTON      "...",IDC_MODELLIST,289,63,15,13,WS_DISABLED
+    PUSHBUTTON      "Preferential Countries",IDC_PREFCOUNTRY,130,260,112,15,
+                    WS_DISABLED
+    CONTROL         "",IDC_AGPLUS,"Button",BS_OWNERDRAW | WS_DISABLED | 
+                    WS_TABSTOP,102,258,21,16
+    CONTROL         "",IDC_AGMINUS,"Button",BS_OWNERDRAW | WS_DISABLED | 
+                    WS_TABSTOP,250,258,21,16
+    CONTROL         "",IDC_AGLIST,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,7,114,367,142
+END
+
+IDD_COUNTSELECT DIALOGEX 0, 0, 197, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Select Countries"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,202,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,202,50,14
+    LISTBOX         IDC_COUNTRIES,7,7,183,190,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PROPSELECT DIALOGEX 0, 0, 197, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Select Propagation Models"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,59,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,59,50,14
+    LISTBOX         IDC_PROPS,7,7,183,49,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_SERVSELECT DIALOGEX 0, 0, 197, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Select Service Types"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,51,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,51,50,14
+    LISTBOX         IDC_SERVICES,7,7,183,41,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_SRSDLG DIALOG DISCARDABLE  0, 0, 310, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Earth Station Import"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Import",IDOK,241,47,50,14
+    PUSHBUTTON      "Close",IDCANCEL,241,83,50,14
+    GROUPBOX        "Source MDB",ID_STATIC1,7,7,293,25
+    GROUPBOX        "Administration",ID_STATIC2,10,36,209,69
+    LISTBOX         IDC_ADMLIST,15,47,50,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ADMSEL,165,47,50,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add -->",IDC_AdmAdd,68,51,48,14
+    PUSHBUTTON      "Add all",IDC_AdmAddAll,68,76,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "<-- Remove",IDC_AdmRemove,118,51,45,14
+    PUSHBUTTON      "Clear",IDC_AdmClear,118,76,45,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,102,108,198,13
+    RTEXT           "Import progress:",ID_STATIC3,7,109,91,10
+    EDITTEXT        IDC_MDB_FILE,9,16,246,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_BROWSE,256,16,41,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_QueryDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+        HORZGUIDE, 209
+    END
+
+    IDD_SelectRecord, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_ACCESSLEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_AGREEMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_COUNTSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_PROPSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_SERVSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_SRSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SelectRecord DLGINIT
+BEGIN
+    IDC_ADODC1, 0x376, 1298, 0
+0x0024, 0x0000, 0x0043, 0x0034, 0x0031, 0x0034, 0x0035, 0x0033, 0x0031, 
+0x0030, 0x002d, 0x0034, 0x0036, 0x0039, 0x0043, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0031, 0x0038, 0x0032, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0032, 0x0032, 0x0045, 0x0038, 
+0x0032, 0x0030, 0x4321, 0x1234, 0x0008, 0x0000, 0x0a21, 0x0000, 0x0261, 
+0x0000, 0x6bc0, 0xba38, 0x0000, 0x0006, 0x0000, 0x0000, 0x0003, 0x0000, 
+0xffff, 0xffff, 0x000f, 0x0000, 0x001e, 0x0000, 0x0003, 0x0000, 0x0003, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0032, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0000, 0x0001, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x0000, 0x0000, 0xffff, 0x0000, 0x0013, 0x0000, 
+0x0044, 0x0053, 0x004e, 0x003d, 0x0043, 0x0044, 0x0054, 0x0065, 0x0072, 
+0x0052, 0x0061, 0x0042, 0x0061, 0x0073, 0x0065, 0x0042, 0x0045, 0x0054, 
+0x0041, 0x0000, 0x0000, 0x0000, 0x0000, 0x000f, 0x0000, 0x0043, 0x0044, 
+0x0054, 0x0065, 0x0072, 0x0052, 0x0061, 0x0042, 0x0061, 0x0073, 0x0065, 
+0x0042, 0x0045, 0x0054, 0x0041, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x01eb, 0x0000, 0x0053, 0x0045, 0x004c, 0x0045, 0x0043, 0x0054, 
+0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0074, 0x0065, 0x0072, 0x0072, 
+0x0061, 0x002e, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 0x006b, 0x0065, 
+0x0079, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0074, 0x0065, 
+0x0072, 0x0072, 0x0061, 0x002e, 0x0066, 0x0072, 0x0065, 0x0071, 0x005f, 
+0x0061, 0x0073, 0x0073, 0x0067, 0x006e, 0x002c, 0x0020, 0x0066, 0x0078, 
+0x006d, 0x005f, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 0x002e, 0x0073, 
+0x0074, 0x006e, 0x005f, 0x0063, 0x006c, 0x0073, 0x002c, 0x0020, 0x0066, 
+0x0078, 0x006d, 0x005f, 0x0067, 0x0065, 0x006f, 0x002e, 0x0073, 0x0069, 
+0x0074, 0x0065, 0x005f, 0x006e, 0x0061, 0x006d, 0x0065, 0x002c, 0x0020, 
+0x0066, 0x0078, 0x006d, 0x005f, 0x0067, 0x0065, 0x006f, 0x005f, 0x0070, 
+0x0074, 0x002e, 0x006c, 0x006f, 0x006e, 0x0067, 0x005f, 0x0064, 0x0065, 
+0x0063, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0067, 0x0065, 
+0x006f, 0x005f, 0x0070, 0x0074, 0x002e, 0x006c, 0x0061, 0x0074, 0x005f, 
+0x0064, 0x0065, 0x0063, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0061, 0x006e, 0x0074, 0x002e, 0x0070, 0x0077, 0x0072, 0x005f, 0x0061, 
+0x006e, 0x0074, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0061, 
+0x006e, 0x0074, 0x002e, 0x0061, 0x007a, 0x006d, 0x005f, 0x006d, 0x0061, 
+0x0078, 0x005f, 0x0065, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0061, 0x006e, 0x0074, 0x002e, 0x0067, 0x0061, 0x0069, 0x006e, 0x005f, 
+0x006d, 0x0061, 0x0078, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0061, 0x006e, 0x0074, 0x002e, 0x0062, 0x006d, 0x0077, 0x0064, 0x0074, 
+0x0068, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0061, 0x006e, 
+0x0074, 0x002e, 0x0065, 0x006c, 0x0065, 0x0076, 0x002c, 0x0020, 0x0066, 
+0x0078, 0x006d, 0x005f, 0x0061, 0x006e, 0x0074, 0x002e, 0x0070, 0x006f, 
+0x006c, 0x0061, 0x0072, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0061, 0x006e, 0x0074, 0x002e, 0x0068, 0x0067, 0x0074, 0x005f, 0x0061, 
+0x0067, 0x006c, 0x002c, 0x0020, 0x0027, 0x0061, 0x006e, 0x0074, 0x005f, 
+0x0044, 0x0045, 0x0046, 0x0041, 0x0055, 0x004c, 0x0054, 0x002e, 0x0061, 
+0x006e, 0x0074, 0x0027, 0x0020, 0x0041, 0x0053, 0x0020, 0x0041, 0x006e, 
+0x0074, 0x0065, 0x006e, 0x006e, 0x0061, 0x002c, 0x0020, 0x0066, 0x0078, 
+0x006d, 0x005f, 0x0061, 0x006e, 0x0074, 0x002e, 0x0061, 0x006e, 0x0074, 
+0x005f, 0x0064, 0x0069, 0x0072, 0x0020, 0x000d, 0x000a, 0x0046, 0x0052, 
+0x004f, 0x004d, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0061, 0x006e, 
+0x0074, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0074, 0x0065, 
+0x0072, 0x0072, 0x0061, 0x002c, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0067, 0x0065, 0x006f, 0x005f, 0x0070, 0x0074, 0x002c, 0x0020, 0x0066, 
+0x0078, 0x006d, 0x005f, 0x0067, 0x0065, 0x006f, 0x000d, 0x000a, 0x0057, 
+0x0048, 0x0045, 0x0052, 0x0045, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0061, 0x006e, 0x0074, 0x002e, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 
+0x006b, 0x0065, 0x0079, 0x0020, 0x003d, 0x0020, 0x0066, 0x0078, 0x006d, 
+0x005f, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 0x002e, 0x0074, 0x0065, 
+0x0072, 0x0072, 0x0061, 0x006b, 0x0065, 0x0079, 0x0020, 0x0020, 0x0061, 
+0x006e, 0x0064, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0074, 0x0065, 
+0x0072, 0x0072, 0x0061, 0x002e, 0x0067, 0x0065, 0x006f, 0x005f, 0x006b, 
+0x0065, 0x0079, 0x0020, 0x003d, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0067, 0x0065, 0x006f, 0x005f, 0x0070, 0x0074, 0x002e, 0x0067, 0x0065, 
+0x006f, 0x005f, 0x006b, 0x0065, 0x0079, 0x0020, 0x0061, 0x006e, 0x0064, 
+0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0074, 0x0065, 0x0072, 0x0072, 
+0x0061, 0x002e, 0x0067, 0x0065, 0x006f, 0x005f, 0x006b, 0x0065, 0x0079, 
+0x0020, 0x003d, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 0x0067, 0x0065, 
+0x006f, 0x002e, 0x0067, 0x0065, 0x006f, 0x005f, 0x006b, 0x0065, 0x0079, 
+0x0020, 0x0061, 0x006e, 0x0064, 0x0020, 0x0066, 0x0078, 0x006d, 0x005f, 
+0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 0x002e, 0x0074, 0x0065, 0x0072, 
+0x0072, 0x0061, 0x006b, 0x0065, 0x0079, 0x003d, 0x002d, 0x0031, 0x0006, 
+0x0000, 0x0041, 0x0064, 0x006f, 0x0064, 0x0063, 0x0031, 0xb201, 0x0000, 
+0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 
+0x6669, 
+    IDC_DATAGRID2, 0x37a, 568, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x07e1, 0x4321, 0x1234, 0x0008, 0x0000, 0x3b6e, 0x0000, 0x1ee7, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0101, 0x0101, 0x0001, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xb201, 
+0x0000, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 
+0x7265, 0x6669, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 
+0x51b8, 0xb201, 0x0000, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 
+0x736e, 0x5320, 0x7265, 0x6669, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0010, 0x0000, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 0x006b, 
+0x0065, 0x0079, 0x0010, 0x0000, 0x0074, 0x0065, 0x0072, 0x0072, 0x0061, 
+0x006b, 0x0065, 0x0079, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 
+0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xe39d, 0xaa00, 
+0x4b00, 0x51b8, 0xb201, 0x0000, 0x0409, 0x0000, 0x0000, 0x0000, 0x0012, 
+0x0000, 0x0066, 0x0072, 0x0065, 0x0071, 0x0075, 0x0065, 0x006e, 0x0063, 
+0x0079, 0x0014, 0x0000, 0x0066, 0x0072, 0x0065, 0x0071, 0x005f, 0x0061, 
+0x0073, 0x0073, 0x0067, 0x006e, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 
+0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0409, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    0
+END
+
+IDD_AGREEMENTS DLGINIT
+BEGIN
+    IDC_AGMODEL, 0x403, 2, 0
+0x0031, 
+    IDC_AGMODEL, 0x403, 2, 0
+0x0032, 
+    IDC_AGTYPE, 0x403, 2, 0
+0x0041, 
+    IDC_AGTYPE, 0x403, 2, 0
+0x0042, 
+    IDC_AGLIST, 0x37a, 428, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x38f3, 0x0000, 0x17e0, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0x0001, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xb201, 0x0000, 
+0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 
+0x6669, 0x0000, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_QueryDLG DLGINIT
+BEGIN
+    IDC_F1U, 0x403, 3, 0
+0x7a48, "\000" 
+    IDC_F1U, 0x403, 4, 0
+0x484b, 0x007a, 
+    IDC_F1U, 0x403, 4, 0
+0x484d, 0x007a, 
+    IDC_F1U, 0x403, 4, 0
+0x4847, 0x007a, 
+    IDC_F2U, 0x403, 3, 0
+0x7a48, "\000" 
+    IDC_F2U, 0x403, 4, 0
+0x484b, 0x007a, 
+    IDC_F2U, 0x403, 4, 0
+0x484d, 0x007a, 
+    IDC_F2U, 0x403, 4, 0
+0x4847, 0x007a, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ADD1                BITMAP  DISCARDABLE     "res\\add1.bmp"
+IDB_ADD2                BITMAP  DISCARDABLE     "res\\add2.bmp"
+IDB_SAVE3               BITMAP  DISCARDABLE     "res\\save3.bmp"
+IDB_DELETE1             BITMAP  DISCARDABLE     "res\\delete1.bmp"
+IDB_DELETE2             BITMAP  DISCARDABLE     "res\\delete2.bmp"
+IDB_FIRST1              BITMAP  DISCARDABLE     "res\\first1.bmp"
+IDB_FIRST2              BITMAP  DISCARDABLE     "res\\first2.bmp"
+IDB_FIRST3              BITMAP  DISCARDABLE     "res\\first3.bmp"
+IDB_LAST1               BITMAP  DISCARDABLE     "res\\last1.bmp"
+IDB_LAST2               BITMAP  DISCARDABLE     "res\\last2.bmp"
+IDB_LAST3               BITMAP  DISCARDABLE     "res\\last3.bmp"
+IDB_NEXT1               BITMAP  DISCARDABLE     "res\\next1.bmp"
+IDB_NEXT2               BITMAP  DISCARDABLE     "res\\next2.bmp"
+IDB_NEXT3               BITMAP  DISCARDABLE     "res\\next3.bmp"
+IDB_PREV1               BITMAP  DISCARDABLE     "res\\prev1.bmp"
+IDB_PREV2               BITMAP  DISCARDABLE     "res\\prev2.bmp"
+IDB_PREV3               BITMAP  DISCARDABLE     "res\\prev3.bmp"
+IDB_SAVE1               BITMAP  DISCARDABLE     "res\\save1.bmp"
+IDB_SAVE2               BITMAP  DISCARDABLE     "res\\save2.bmp"
+IDB_ADD3                BITMAP  DISCARDABLE     "res\\add3.bmp"
+IDB_DELETE3             BITMAP  DISCARDABLE     "res\\delete3.bmp"
+IDB_PLUS1               BITMAP  DISCARDABLE     "res\\plus1.bmp"
+IDB_MINUS1              BITMAP  DISCARDABLE     "res\\minus1.bmp"
+IDB_PLUS2               BITMAP  DISCARDABLE     "res\\plus2.bmp"
+IDB_MINUS2              BITMAP  DISCARDABLE     "res\\minus2.bmp"
+IDB_MINUS3              BITMAP  DISCARDABLE     "res\\minus3.bmp"
+IDB_PLUS3               BITMAP  DISCARDABLE     "res\\plus3.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\IFIC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

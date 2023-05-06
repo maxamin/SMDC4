@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Administrative - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Administrative.res" /d "_DEBUG" /d "_AFXDLL" "C:\ITU\progs\Administrative-5-2\Administrative.rc"" 
+Creating temporary file "C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP795.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Debug/" /Fp"Debug/Administrative.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\ITU\progs\Administrative-5-2\Administrative.cpp"
+"C:\ITU\progs\Administrative-5-2\AntPattern.cpp"
+"C:\ITU\progs\Administrative-5-2\Audit.cpp"
+"C:\ITU\progs\Administrative-5-2\CatSelect.cpp"
+"C:\ITU\progs\Administrative-5-2\ChildFrm.cpp"
+"C:\ITU\progs\Administrative-5-2\CustomReport.cpp"
+"C:\ITU\progs\Administrative-5-2\EditGrid.cpp"
+"C:\ITU\progs\Administrative-5-2\EditWnd.cpp"
+"C:\ITU\progs\Administrative-5-2\ESAntPat.cpp"
+"C:\ITU\progs\Administrative-5-2\ESNotice.cpp"
+"C:\ITU\progs\Administrative-5-2\font.cpp"
+"C:\ITU\progs\Administrative-5-2\GrpDetails.cpp"
+"C:\ITU\progs\Administrative-5-2\LeftView.cpp"
+"C:\ITU\progs\Administrative-5-2\LockDefs.cpp"
+"C:\ITU\progs\Administrative-5-2\MainFrm.cpp"
+"C:\ITU\progs\Administrative-5-2\MoveStation.cpp"
+"C:\ITU\progs\Administrative-5-2\mshflexgrid.cpp"
+"C:\ITU\progs\Administrative-5-2\msmask.cpp"
+"C:\ITU\progs\Administrative-5-2\MyMultiDocTemplate.cpp"
+"C:\ITU\progs\Administrative-5-2\Notice.cpp"
+"C:\ITU\progs\Administrative-5-2\PaymentDlg.cpp"
+"C:\ITU\progs\Administrative-5-2\picture.cpp"
+"C:\ITU\progs\Administrative-5-2\Receivers.cpp"
+"C:\ITU\progs\Administrative-5-2\recordset.cpp"
+"C:\ITU\progs\Administrative-5-2\RightGrid.cpp"
+"C:\ITU\progs\Administrative-5-2\TreeSearch.cpp"
+"C:\ITU\progs\Administrative-5-2\treeviewDoc.cpp"
+"C:\ITU\progs\Administrative-5-2\treeviewView.cpp"
+"C:\ITU\progs\Administrative-5-2\TxRxFilterDLG.cpp"
+"C:\ITU\progs\Administrative-5-2\TxRxFiltersSet.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP795.tmp" 
+Creating temporary file "C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP796.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Debug/" /Fp"Debug/Administrative.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\ITU\progs\Administrative-5-2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP796.tmp" 
+Creating temporary file "C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP797.tmp" with contents
+[
+c:\ITU\progs\Administrative-4-2\Debug\idwm32d.lib c:\ITU\progs\Administrative-4-2\Debug\ESantDLL.lib c:\ITU\progs\Administrative-4-2\Debug\spromeps.lib c:\ITU\progs\Administrative-4-2\Debug\CNT_lang.lib wsock32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /version:2.0 /subsystem:windows /dll /incremental:yes /pdb:"Debug/Administrative.pdb" /debug /machine:I386 /nodefaultlib:"MSVCRT.LIB" /def:".\Administrative.def" /out:"Debug/Administrative.dll" /implib:"Debug/Administrative.lib" /pdbtype:sept 
+".\Debug\Administrative.obj"
+".\Debug\AntPattern.obj"
+".\Debug\Audit.obj"
+".\Debug\CatSelect.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\CustomReport.obj"
+".\Debug\EditGrid.obj"
+".\Debug\EditWnd.obj"
+".\Debug\ESAntPat.obj"
+".\Debug\ESNotice.obj"
+".\Debug\font.obj"
+".\Debug\GrpDetails.obj"
+".\Debug\LeftView.obj"
+".\Debug\LockDefs.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MoveStation.obj"
+".\Debug\mshflexgrid.obj"
+".\Debug\msmask.obj"
+".\Debug\MyMultiDocTemplate.obj"
+".\Debug\Notice.obj"
+".\Debug\PaymentDlg.obj"
+".\Debug\picture.obj"
+".\Debug\Receivers.obj"
+".\Debug\recordset.obj"
+".\Debug\RightGrid.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TreeSearch.obj"
+".\Debug\treeviewDoc.obj"
+".\Debug\treeviewView.obj"
+".\Debug\TxRxFilterDLG.obj"
+".\Debug\TxRxFiltersSet.obj"
+".\Debug\Administrative.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\XPMUser\LOCALS~1\Temp\RSP797.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Administrative.cpp
+AntPattern.cpp
+Audit.cpp
+CatSelect.cpp
+ChildFrm.cpp
+CustomReport.cpp
+EditGrid.cpp
+EditWnd.cpp
+ESAntPat.cpp
+ESNotice.cpp
+font.cpp
+GrpDetails.cpp
+LeftView.cpp
+C:\ITU\progs\Administrative-5-2\LeftView.cpp(2499) : warning C4101: 'MinID' : unreferenced local variable
+LockDefs.cpp
+MainFrm.cpp
+MoveStation.cpp
+mshflexgrid.cpp
+msmask.cpp
+MyMultiDocTemplate.cpp
+Notice.cpp
+PaymentDlg.cpp
+picture.cpp
+Receivers.cpp
+C:\ITU\progs\Administrative-5-2\Receivers.cpp(338) : warning C4101: 'Node' : unreferenced local variable
+recordset.cpp
+RightGrid.cpp
+TreeSearch.cpp
+treeviewDoc.cpp
+treeviewView.cpp
+TxRxFilterDLG.cpp
+TxRxFiltersSet.cpp
+Linking...
+   Creating library Debug/Administrative.lib and object Debug/Administrative.exp
+
+
+
+<h3>Results</h3>
+Administrative.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

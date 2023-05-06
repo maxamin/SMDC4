@@ -1,0 +1,125 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by IFIC.rc
+//
+#define ID_SAVE                         3
+#define IDC_FMTV                        20000
+#define IDD_QueryDLG                    20000
+#define IDC_LFMF                        20010
+#define IDC_FXM                         20020
+#define IDD_SelectRecord                20020
+#define IDC_ADMLIST                     20030
+#define IDC_ADMSEL                      20040
+#define IDC_AdmAdd                      20050
+#define IDC_AdmAddAll                   20060
+#define IDD_ACCESSLEVEL                 20060
+#define IDC_AdmRemove                   20070
+#define IDD_AGREEMENTS                  20070
+#define IDC_AdmClear                    20080
+#define IDC_FreqCond                    20090
+#define IDD_COUNTSELECT                 20090
+#define IDC_FreqCondSel                 20100
+#define IDB_ADD1                        20100
+#define IDD_PROPSELECT                  20100
+#define IDC_FreqAdd                     20110
+#define IDB_ADD2                        20110
+#define IDD_SERVSELECT                  20110
+#define IDC_FreqRem                     20120
+#define IDB_SAVE3                       20120
+#define IDD_SRSDLG                      20120
+#define IDC_F1                          20130
+#define IDB_DELETE1                     20130
+#define IDC_F2                          20140
+#define IDB_DELETE2                     20140
+#define IDC_F1U                         20150
+#define IDB_FIRST1                      20150
+#define IDC_F2U                         20160
+#define IDB_FIRST2                      20160
+#define IDC_ADODC1                      20170
+#define IDC_ClassSel                    20170
+#define IDB_FIRST3                      20170
+#define IDC_DATAGRID2                   20180
+#define IDC_ClassAdd                    20180
+#define IDB_LAST1                       20180
+#define IDC_ClassRemove                 20190
+#define IDB_LAST2                       20190
+#define IDC_ClassClear                  20200
+#define IDB_LAST3                       20200
+#define IDB_NEXT1                       20210
+#define IDC_ID                          20210
+#define IDB_NEXT2                       20220
+#define IDC_DIGITAL                     20220
+#define IDB_NEXT3                       20230
+#define IDB_PREV1                       20240
+#define IDC_PROGRESS                    20250
+#define IDB_PREV2                       20250
+#define IDC_STATION_CLASS               20260
+#define IDB_PREV3                       20260
+#define IDC_FRAGMENT                    20270
+#define IDB_SAVE1                       20270
+#define IDC_FragAdd                     20280
+#define IDB_SAVE2                       20280
+#define IDC_FragRemove                  20290
+#define IDB_ADD3                        20290
+#define IDC_FragClear                   20300
+#define IDB_DELETE3                     20300
+#define IDC_FragSel                     20310
+#define IDB_PLUS1                       20310
+#define IDC_USERMOD                     20320
+#define IDB_MINUS1                      20320
+#define IDC_IDAdd                       20320
+#define IDC_PASSMOD                     20330
+#define IDB_PLUS2                       20330
+#define IDC_IDRemove                    20330
+#define IDC_ACCESSLEVEL                 20340
+#define IDB_MINUS2                      20340
+#define IDC_IDSel                       20340
+#define ID_DELETE                       20350
+#define IDB_MINUS3                      20350
+#define IDC_NEW                         20360
+#define IDB_PLUS3                       20360
+#define IDC_MODIFY                      20370
+#define IDC_USERADD                     20380
+#define IDC_PASSADD                     20390
+#define IDC_ENABLED                     20420
+#define IDC_AGNAME                      20430
+#define IDC_AGSERV                      20440
+#define IDC_AGCOUNTRIES                 20450
+#define IDC_AGPROP                      20480
+#define IDC_AGNEW                       20500
+#define IDC_AGMOD                       20510
+#define IDC_AGSAVE                      20520
+#define IDC_AGPREV                      20530
+#define IDC_AGNEXT                      20540
+#define IDC_MODLIST                     20550
+#define IDC_AGCANCEL                    20560
+#define IDC_AGPLUS                      20570
+#define IDC_AGDELETE                    20580
+#define IDC_AGFIRST                     20590
+#define IDC_AGLAST                      20600
+#define IDC_RECORDCOUNT                 20610
+#define IDC_AGMODEL                     20620
+#define IDC_AGTYPE                      20630
+#define IDC_SERVLIST                    20640
+#define IDC_COUNTLIST                   20650
+#define IDC_MODELLIST                   20660
+#define IDC_COUNTRIES                   20660
+#define IDC_AGMINUS                     20670
+#define IDC_PROPS                       20680
+#define IDC_SERVICES                    20690
+#define IDC_PREFCOUNTRY                 20710
+#define IDC_AGLIST                      20740
+#define IDC_TYPE_lbl                    20750
+#define IDC_MDB_FILE                    20760
+#define IDC_BROWSE                      20770
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        2034
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         2078
+#define _APS_NEXT_SYMED_VALUE           2000
+#endif
+#endif
